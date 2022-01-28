@@ -1,3 +1,0 @@
-<h1>Hello internet</h1>
-<br>
-I love html
