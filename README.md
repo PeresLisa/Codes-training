@@ -1,5 +1,5 @@
 # Codes-training
-Some tutorials I follow to learn new stuff - link of the tuto above (mainly french for now):
+Some tutorials I follow to learn new stuff - link of tutos behind (mainly french up to date):
 
 <h2>Youtube channel : From Scratch - Développement Web</h2>
 - https://www.youtube.com/watch?v=qsbkZ7gIKnc
