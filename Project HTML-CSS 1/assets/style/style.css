@@ -1,0 +1,55 @@
+@font-face {
+  font-family: "Source Sans Pro";
+  src: url(../fonts/SourceSansPro-Light.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* pour que tout se mette dans les boîtes de façon propre */
+  list-style-type: none;
+}
+h1 {
+  font-size: 3.4rem;
+  font-weight: 200;
+}
+h2 {
+  font-size: 2.5 rem;
+  font-weight: 500;
+  letter-spacing: -1px;
+}
+a,
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+p {
+  line-height: 36px;
+  margin: 25px 0;
+}
+.button {
+  border: 1px solid #ccc;
+  background: transparent;
+  border-radius: 50px;
+  padding: 13px 30px;
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  font: 700 0.75rem "Source Sans Pro";
+  /* rassemble font weight font size et font family */
+  transition: 0.3s;
+}
+.button:hover,
+footer a:hover {
+  border: 1px solid skyblue;
+  color: skyblue;
+}
+
+/* ********************************* */
+/* Reprise ordre HTML */
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+}
