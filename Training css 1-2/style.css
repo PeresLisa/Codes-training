@@ -1,0 +1,173 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap");
+@font-face {
+  font-family: "font-1";
+  src: url(./assets/Lato-Italic.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "font-1", sans-serif;
+  background: url(./assets/bateau.JPG) fixed left/cover;
+}
+
+h1 {
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  /* espacement entre les lettres */
+
+  font-size: 2.5rem;
+  color: darkblue;
+  text-shadow: 5px 4px 3px #97b5b5;
+  /* premier chiffre axe x et second axe y, troisième = flou 'blur' */
+  text-align: center;
+
+  font-family: "Lato", sans-serif;
+}
+
+main {
+  background: whitesmoke;
+  width: 85%;
+  min-height: 500px;
+  margin: 10px auto;
+  padding: 10px 50px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 12px 5px rgba(0, 0, 0, 0.2);
+}
+
+.positioning,
+.flexbox,
+.grid {
+  border: 2px solid skyblue;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/**************POSITIONING****************/
+.positioning {
+  position: relative;
+}
+
+#circle {
+  height: 60px;
+  width: 60px;
+  background: skyblue;
+  padding: 20px;
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+#rectangle {
+  height: 30px;
+  width: 100px;
+  background: blueviolet;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* tu reviens de -50% de ta propre taille */
+}
+
+/**************FLEXBOX****************/
+ul {
+  display: flex;
+  /* mets à la ligne les 3 box les unes à la suite des autres */
+  justify-content: space-around;
+}
+li {
+  list-style-type: none;
+  font-size: 0.7rem;
+  height: 160px;
+  width: 160px;
+  background: burlywood;
+  display: flex;
+  /* chaque petit cadre est en flex */
+  align-items: center;
+  justify-content: center;
+  /* centrer horizontalement puis verticalement */
+}
+
+/**************GRID****************/
+.grid-container {
+  display: grid;
+  grid-template-columns: 30% 70%;
+}
+.img {
+  text-align: center;
+}
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* on veut deux colonnes qui sont égales, càd une fraction et une fraction */
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas:
+    "i1 i2"
+    "ta ta"
+    "bt bt";
+  /* dessin de ce à quoi on veut que le formulaire ressemble */
+}
+input,
+textarea {
+  margin: 5px;
+  height: 45px;
+  border: 1px solid darkblue;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 1.1rem;
+  font-family: font-1;
+}
+#firstname {
+  grid-area: i1;
+}
+#surname {
+  grid-area: i2;
+}
+textarea {
+  grid-area: ta;
+  resize: none;
+  /* éviter que les zones de texte puissent se redimensionner */
+}
+input[type="submit"] {
+  /* doit être ainsi car il ne s'agit pas d'un objet mais d'un input */
+  grid-area: bt;
+  cursor: pointer;
+  background: darkblue;
+  color: beige;
+  transition: 0.2s;
+  /* transition par rapport au hower, pour que ce soit plus doux et moins violent */
+}
+input[type="submit"]:hover {
+  /* quand on passe par dessus l'objet sur la page, il a ce style */
+  background: darkcyan;
+  color: darkblue;
+}
+
+/**************RESPONSIVE****************/
+@media screen and (max-width: 1000px) {
+  /* tant que la largeur minimal n'excède pas 1000 px, tu appliques ça */
+  .grid-container {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  /* tant que la largeur minimal n'excède pas 780 px, tu appliques ça */
+  form {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+      "i1"
+      "i2"
+      "ta"
+      "bt";
+  }
+  /* 400 pixels = largeur téléphone */
+}
