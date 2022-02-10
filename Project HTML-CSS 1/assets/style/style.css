@@ -178,3 +178,37 @@ footer a {
   justify-content: center;
   transition: 0.3s;
 }
+/* bloc : élements les uns à la suite des autres vs grid pour arrangement en colonne */
+
+/************ RESPONSIVE ************/
+/* souvent en bas dans le code */
+
+@media screen and (max-width: 650px) {
+  /* quand l'écran fait moins de 650px, le code suivant est appliqué */
+  header,
+  .section1,
+  .section2 {
+    display: block;
+  }
+  header {
+    height: auto;
+    /* en mobile, moins pertinent de mettre 100vh */
+  }
+  header .img-banner {
+    height: 50vh;
+    margin-top: 30px;
+  }
+  .container {
+    padding: 15px;
+  }
+  footer ul {
+    min-width: 200px;
+  }
+  footer a {
+    width: 30px;
+    height: 30px;
+  }
+  footer i {
+    font-size: 0.7rem;
+  }
+}
