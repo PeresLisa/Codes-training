@@ -10,6 +10,7 @@ Some tutorials I follow to learn new stuff - link of tutos behind (mainly french
 - Training CSS part 2 https://www.youtube.com/watch?v=8yJw6OCJI4E&t=5483s
 <br>
 - Project HTML/CSS 1 https://www.youtube.com/watch?v=YS60RGpnhNw&t=28s
+<br>
 - Project HTML/CSS 2 https://www.youtube.com/watch?v=bZ3SC6PvAC8&list=WL&index=57
 
 <h2>To investigate</h2>
