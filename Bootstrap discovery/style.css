@@ -36,3 +36,56 @@ h1 {
     transform: translate(0px, 0px);
   }
 }
+
+/* *********************LEFT PART********************* */
+#leftPart {
+  background-color: #bcf5a9;
+  border-radius: 20px;
+  padding: 25px;
+}
+.elements {
+  padding: 70px 0;
+}
+.elements img {
+  border-radius: 50%;
+  width: 200px;
+}
+.elements p {
+  font-size: 1.2em;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+  padding-right: 20px;
+}
+.elements .button {
+  text-align: right;
+  margin: 15px 4% 0 0;
+}
+
+/* *********************RIGHT PART********************* */
+#rightPart {
+  background-color: #9b6833;
+  border-radius: 20px;
+  padding: 20px;
+}
+.tips {
+  height: 200px;
+  width: 200px;
+  margin: 20px auto;
+}
+.tips h4 {
+  position: relative;
+  color: green;
+  top: 50%;
+  transform: translateY(-50%);
+  text-shadow: 1px 1px 0 #bcf5a9, 1px -1px 0 #bcf5a9, -1px 1px 0 #bcf5a9,
+    -1px -1px 0 #bcf5a9, 1px 0 0 #bcf5a9, 0 1px 0 #bcf5a9, -1px 0 0 #bcf5a9,
+    0 -0px 0 #bcf5a9;
+  /* on met plusieurs couches de shadow pour entourer le texte*/
+}
+.tips:hover {
+  transform: scale(1.08);
+  opacity: 0.7;
+  transition: ease-out 0.2s;
+}
