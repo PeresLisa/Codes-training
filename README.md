@@ -13,7 +13,9 @@ Some tutorials I follow to learn new stuff - link of tutos behind (mainly french
 <br>
 - Project HTML/CSS 2 https://www.youtube.com/watch?v=bZ3SC6PvAC8&list=WL&index=57
 <br>
-- Project resume as webpage https://www.youtube.com/watch?v=uPlb37rmauY (part I)
+- Introduction to Bootstrap https://www.youtube.com/watch?v=ksNQZOA1veo
+<br>
+- Project resume as webpage, using JSS https://www.youtube.com/watch?v=uPlb37rmauY (part I)
 
 <h2>To investigate</h2>
 - https://fr.khanacademy.org/
