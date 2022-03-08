@@ -89,3 +89,43 @@ h1 {
   opacity: 0.7;
   transition: ease-out 0.2s;
 }
+
+#transition {
+  padding: 50px 0;
+}
+#transition img {
+  animation: rateau ease 12s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  animation-fill-mode: forwards;
+}
+/* utilisation possible de générateurs pour les animations */
+@keyframes rateau {
+  0% {
+    transform: translate(0px, 0px);
+  }
+  9% {
+    transform: translate(79px, -22px);
+  }
+  26% {
+    transform: translate(-4px, -5px);
+  }
+  33% {
+    transform: translate(80px, 18px);
+  }
+  48% {
+    transform: translate(-17px, -13px);
+  }
+  56% {
+    transform: translate(57px, -45px);
+  }
+  71% {
+    transform: translate(-11px, -12px);
+  }
+  82% {
+    transform: translate(72px, 7px);
+  }
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
