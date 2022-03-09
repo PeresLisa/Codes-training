@@ -129,3 +129,27 @@ h1 {
     transform: translate(0px, 0px);
   }
 }
+
+/* *********************NEWSLETTER********************* */
+#newsletter {
+  background: url(./media/newsletter.jpeg) no-repeat 50% 50%;
+  background-size: cover;
+  height: 370px;
+  width: 70%;
+  min-width: 450px;
+  margin: 0 auto 70px auto;
+  border-radius: 50%;
+}
+#newsletter h4 {
+  margin-top: 15px;
+  padding: 100px 0 20px 0;
+  font-size: 2em;
+  text-shadow: 1px 1px 0 #bcf5a9, 1px -1px 0 #bcf5a9, -1px 1px 0 #bcf5a9,
+    -1px -1px 0 #bcf5a9, 1px 0 0 #bcf5a9, 0 1px 0 #bcf5a9, -1px 0 0 #bcf5a9,
+    0 -0px 0 #bcf5a9;
+}
+#newsletter .input-group {
+  width: 40%;
+  min-width: 350px;
+  margin: 0 auto;
+}
