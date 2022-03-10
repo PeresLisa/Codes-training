@@ -11,6 +11,15 @@ footer {
 }
 
 /* *********************HEADER********************* */
+.collapse {
+  margin-left: 4%;
+}
+.nav-item {
+  color: darkslategray;
+  font-weight: bold;
+  padding-right: 45px;
+}
+
 header {
   background: url(./media/main.jpg) no-repeat 50% 50%;
   /* 50/50 pour qu'elle soit bien centrée sur la page */
