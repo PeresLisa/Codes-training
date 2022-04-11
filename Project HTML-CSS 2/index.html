@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clos Marsault</title>
+
+    <link rel="stylesheet" href="./node_modules/aos/dist/aos.css">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
 </head>
@@ -22,10 +24,28 @@
         </nav>
         <div id="image_principale"> 
             <!-- pour que le site aille plus vite, uploader les images depuis le css -->
-            <h1>Clos Marsault</h1>
+            <h1
+            class="aos-item"
+            data-aos="zoom-in"
+            data-aos-delay="500"
+            data-aos-duration="2000"
+            data-aos-once="false"
+            >
+            Clos Marsault</h1>
             <!-- titre sur lequel le navigateur se base pour savoir de quoi le site parle -->
-            <div id="premier_trait"></div>
-            <h3>Chambre d'hôtes</h3>
+            <div 
+            id="premier_trait"
+            class="aos-item"
+            data-aos="flip-left"
+            data-aos-duration="3000"
+            ></div>
+            <h3
+            class="aos-item"
+            data-aos="zoom-out-up"
+            data-aos-delay="1500"
+            data-aos-duration="3000"
+            data-aos-once="false"
+            >Chambre d'hôtes</h3>
         </div>
 
     </header>
@@ -35,37 +55,126 @@
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nam harum quis id numquam dicta maxime magni officiis quod deserunt. Sint, soluta sunt, nam sit natus corrupti, eius provident ea in blanditiis accusantium! Quo nobis magnam dignissimos at sit explicabo est obcaecati vitae iure, libero quos modi facilis eos quas voluptatibus, amet dicta ab rem, necessitatibus quam dolorem error non placeat! Nostrum quidem fugiat a optio atque non, reiciendis sed voluptatem nam quisquam ipsum necessitatibus animi eius minima enim error laborum.</p>
         </div>
         <div id="prestation">
-            <!-- id une seule balise alors que class plusieurs balises -->
-            <div class="image_presta">
+                <!-- id une seule balise alors que class plusieurs balises -->
+
+            <div class="image_presta aos-item"
+                data-aos="flip-left"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                data-aos-easing="ease-out-cubic">
                 <h4>Nous trouver</h4>
                 <a href="#"><img src="./assets/carte.JPG" alt="Carte d'accès"></a>
             </div>
-            <div class="image_presta">
-                <h4>Côté chambres</h4>
-                <a href="#"><img src="./assets/chambre.JPG" alt="Chambres"></a>
-            </div>
-            <div class="image_presta">
-                <h4>Côté cuisine</h4>
-                <a href="#"><img src="./assets/repas.JPG" alt="Repas"></a>
-            </div>
+
+                    
+                <div class="image_presta aos-item"
+                data-aos="flip-left"
+                data-aos-delay="1000"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                data-aos-easing="ease-out-cubic">
+                    <h4>Côté chambres</h4>
+                    <a href="#"><img src="./assets/chambre.JPG" alt="Chambres"></a>
+                </div>
+                <div class="image_presta aos-item"
+                data-aos="flip-left"
+                data-aos-delay="2000"
+                data-aos-duration="1500"
+                data-aos-once="true"
+                data-aos-easing="ease-out-cubic">
+                     <h4>Côté cuisine</h4>
+                    <a href="#"><img src="./assets/repas.JPG" alt="Repas"></a>
+                </div>
         </div>
     </section>
     <section id="tourisme">
         <h2>Et tant à découvrir...</h2>
         <ul>
-            <li id="ocean"><p>L'océan Atlantique</p></li>
-            <li id="chateau"><p>Les châteaux du Médoc</p></li>
-            <li id="phare"><p>L'estuaire de la Gironde</p></li>
-            <li id="vignoble"><p>Les vignobles bordelais</p></li>
+            <li id="ocean"
+            class="aos-item"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-once="false">
+                <p
+                class="aos-item"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="2500"
+                data-aos-once="false">
+                L'océan Atlantique
+                </p>
+            </li>
+            <li id="chateau"
+                class="aos-item"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="1000"
+                data-aos-once="false">
+                <p
+                class="aos-item"
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="2500"
+                data-aos-once="false">
+                    Les châteaux du Médoc
+                </p>
+            </li>
+            <li id="phare"
+            class="aos-item"
+            data-aos="fade-right"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-once="false"
+            >
+                <p class="aos-item"
+                data-aos="fade-left"
+                data-aos-delay="500"
+                data-aos-duration="2500"
+                data-aos-once="false">
+                    L'estuaire de la Gironde
+                </p>
+            </li>
+            <li id="vignoble"
+            class="aos-item"
+            data-aos="fade-left"
+            data-aos-delay="500"
+            data-aos-duration="1000"
+            data-aos-once="false">
+                <p
+                class="aos-item"
+                data-aos="fade-right"
+                data-aos-delay="500"
+                data-aos-duration="2500"
+                data-aos-once="false">
+                Les vignobles bordelais
+                </p>
+            </li>
         </ul>
     </section>
     <footer>
-        <h2 id="contact">Contactez-nous</h2>
+        <h2 id="contact"
+        class="aos-item"
+        data-aos="zoom-in-down">
+        Contactez-nous</h2>
         <form>
-            <input placeholder="Nom">
-            <input placeholder="E-mail">
-            <textarea placeholder="Votre message ici..."></textarea>
-            <button>Envoyer</button>
+            <input 
+            placeholder="Nom"
+            class="aos-item"
+            data-aos="zoom-in-down">
+            <input 
+            placeholder="E-mail"
+            class="aos-item"
+            data-aos="zoom-in-down">
+            <textarea 
+            placeholder="Votre message ici..."
+            class="aos-item"
+            data-aos="zoom-in-down">
+            </textarea>
+            <button
+            class="aos-item"
+            data-aos="zoom-in-down">
+            Envoyer</button>
         </form>
         <div id="deuxieme_trait"></div>
         <div id="copyrighteticones">
@@ -78,5 +187,9 @@
             </div>
         </div>
     </footer>
+
+    <!-- ajout java -->
+    <script src="./node_modules/aos/dist/aos.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
