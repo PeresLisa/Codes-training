@@ -11,7 +11,7 @@ Some tutorials I follow to learn new stuff - link of tutos behind (mainly french
 <br>
 - Project HTML/CSS 1 https://www.youtube.com/watch?v=YS60RGpnhNw&t=28s
 <br>
-- Project HTML/CSS 2 https://www.youtube.com/watch?v=bZ3SC6PvAC8&list=WL&index=57
+- Project HTML/CSS 2 https://www.youtube.com/watch?v=bZ3SC6PvAC8&list=WL&index=57 and https://www.youtube.com/watch?v=RNqpXYoZoCk (library AOS)
 <br>
 - Introduction to Bootstrap https://www.youtube.com/watch?v=ksNQZOA1veo
 <br>
