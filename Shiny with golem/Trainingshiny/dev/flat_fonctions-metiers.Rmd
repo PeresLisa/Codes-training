@@ -1,0 +1,62 @@
+---
+title: "flat_fonctions-metiers.Rmd empty"
+output: html_document
+editor_options: 
+  chunk_output_type: console
+---
+
+```{r development, include=FALSE}
+library(testthat)
+```
+
+```{r development-load}
+# Load already included functions if relevant
+pkgload::load_all(export_all = FALSE)
+```
+
+# Dire bonjour a une personne
+
+La fonction "say_hello() permet de dire bonjour a quelqu un.
+Elle prend en entree un prenom sous forme de chaine de caracteres.
+
+```{r function-say_hello}
+#' Dire bonjour a quelquun
+#'
+#' @param personne  Character, la personne a qui on souhaite dire bonjour
+#'
+#' @importFrom glue glue
+#' @return Character, de type "Hey coucou {personne}
+#' @export
+
+
+say_hello <- function(personne){
+  glue("Hey coucou {personne}")
+}
+
+```
+
+```{r examples-say_hello}
+say_hello(personne = "Hédia")
+say_hello(personne = "Mickaël")
+```
+
+```{r tests-say_hello}
+test_that("say_hello works", {
+  
+  expect_equal(object = say_hello(personne = "Hédia"),
+               expected = "Hey coucou Hédia")
+  
+  expect_equal(object = say_hello(personne = "Margot"),
+               expected = "Hey coucou Margot")
+  #simple mais peut aussi faire des tests pour savoir si en entree prend bien en comtpe des chaines de caracteres, renvoi une erreur si ce nest pas le cas, ect
+})
+```
+
+
+```{r development-inflate, eval=FALSE}
+# Run but keep eval=FALSE to avoid infinite loop
+# Execute in the console directly
+#poru aller tout ranger au bon endroit du package : la desc dans le man, la focntion dans R, les exemples dans la vignette et la doc..., grace a fusen
+fusen::inflate(flat_file = "dev/flat_fonctions-metiers.Rmd", vignette_name = "fonctions metiers de mon app", check = FALSE)
+```
+
