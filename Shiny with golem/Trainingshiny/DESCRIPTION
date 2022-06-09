@@ -4,11 +4,12 @@ Version: 0.0.0.9000
 Authors@R: 
     person("Lisa", "PERES", , "lisa.peres@laposte.net", role = c("cre", "aut"))
 Description: This is a training to learn how to use golem.
-License: What license is it under?
+License: GPL (>=3)
 Imports: 
     config (>= 0.3.1),
     glue,
     golem (>= 0.3.2),
+    pkgload,
     rlang,
     shiny (>= 1.6.0)
 Suggests: 
