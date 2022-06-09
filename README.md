@@ -17,5 +17,8 @@ Some tutorials I follow to learn new stuff - link of tutos behind (mainly french
 <br>
 - Project resume as webpage, using JSS https://www.youtube.com/watch?v=uPlb37rmauY (part I)
 
+<h2>Some ThinkR tutorials</h2>
+- Discovering golem for shiny apps https://www.youtube.com/watch?v=nfP-mGIsqVs
+
 <h2>To investigate</h2>
 - https://fr.khanacademy.org/
