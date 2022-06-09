@@ -1,12 +1,8 @@
 Package: Trainingshiny
-Title: An Amazing Shiny App
+Title: This is a training to learn how to use golem
 Version: 0.0.0.9000
-Authors@R: 
-    person(given = "firstname",
-           family = "lastname",
-           role = c("aut", "cre"),
-           email = "your@email.com")
-Description: What the package does (one paragraph).
+Authors@R: person('Lisa', 'PERES', email = 'lisa.peres@laposte.net', role = c('cre', 'aut'))
+Description: This is a training to learn how to use golem.
 License: What license is it under?
 Imports: 
     config (>= 0.3.1),
@@ -15,3 +11,8 @@ Imports:
 Encoding: UTF-8
 LazyData: true
 RoxygenNote: 7.1.1
+Suggests: 
+    spelling,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+Language: en-US
