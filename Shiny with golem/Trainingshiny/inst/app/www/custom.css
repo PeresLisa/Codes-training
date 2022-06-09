@@ -1,0 +1,56 @@
+/* Fonts */
+
+@font-face {
+  font-family: 'Lato';
+  src: url('fonts/Lato-Italic.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'SourceSansPro';
+  src: url('fonts/SourceSansPro-Light.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* App part */
+
+html {
+  scroll-behavior: smooth;
+  /* pour que les transitions de clics soient moins abruptes */
+}
+
+* {
+  margin: 10px;
+  padding: 0;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  background: url(marble.jpg) fixed left/cover;
+  text-align: center;
+}
+
+.shiny-input-container{
+  margin: 0px auto;
+}
+
+.form-control:focus {
+  outline : none;
+  box-shadow: inset 0px 0px 5px grey;
+}
+
+/* Text output (say hello) */
+.shiny-text-output{
+  font-family: "SourceSansPro";
+  color: grey;
+  font-weight: 200;
+  display: inline;
+  font-size: 20px;
+}
+
+h1{
+  font-family: "SourceSansPro";
+  color: grey;
+}

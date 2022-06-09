@@ -12,7 +12,7 @@ mod_hello_ui <- function(id){
   tagList(
 
     textInput(inputId = ns("prenom"),
-              label = "Entrez votre prénom"),
+              label = "Entrez votre pr\u00e9nom"),
 
     textOutput(outputId = ns("coucou"))
 

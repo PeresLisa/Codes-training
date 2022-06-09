@@ -14,8 +14,12 @@ app_ui <- function(request) {
       mod_hello_ui("hello_1"),
       mod_hello_ui("hello_2")
     )
+
   )
 }
+
+#lancer appli :  golem::run_dev()
+#devtools::check() verification que le package est bien construit, que test ok, que metadonnees ok....
 
 #' Add external Resources to the Application
 #'

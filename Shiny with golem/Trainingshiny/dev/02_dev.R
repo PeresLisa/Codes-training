@@ -15,7 +15,9 @@
 
 ## Dependencies ----
 ## Amend DESCRIPTION with dependencies read from package code parsing
-attachment::att_amend_desc()
+attachment::att_amend_desc("rlang")
+## Add one line by package you want to add as dependency
+usethis::use_package("rlang")
 
 ## Add modules ----
 ## Create a module infrastructure in R/
