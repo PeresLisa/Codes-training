@@ -6,7 +6,7 @@ library(ggplot2)
 plot_UI <- function(id){ #say that it is a UI fonction
   ns <- NS(id)
 
-  tagList(
+  tagList( #makes sure R will treate id well -> items separate the right way
     selectInput(
       inputId = ns("selected_col"),
       label = "selected column",
